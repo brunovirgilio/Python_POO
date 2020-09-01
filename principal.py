@@ -2,9 +2,8 @@ from modulo import Lutador
 
 j1 = Lutador()
 j1.setNome()
+j2 = Lutador()
+j2.setNome2()
 
 
-'''voce escolheu: ...
-computador escolheu:...
-
-Pode começar a luta S ou N?'''
+'''Pode começar a luta S ou N?'''

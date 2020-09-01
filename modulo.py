@@ -1,7 +1,9 @@
+import random 
+
 class Lutador:
     def __init__(self,*n):
         self.nome = n
-
+        
     def setNome(self):
         j1=int(input(''' \tUFC PYTHON\n
         1 - Anderson Silva
@@ -18,10 +20,13 @@ class Lutador:
 
         print(f' Seu lutador é {self.nome}.')
 
-class Luta:
-    def __init__(self,*j1,*j2):
-        self.lutador1 = j1
-        self.lutador2 = j2
+    def setNome2(self):
+        l = ['Jon Jones','George St-Pierre','Chuck Liddell']
+        self.nome = random.choice(l)
+        print(f' O computador escolheu o {self.nome}.')
+
+    
+
     
     
 
