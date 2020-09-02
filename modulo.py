@@ -6,7 +6,20 @@ class Lutador:
         self.nome = n
         
     def setNome(self):
-        j1=int(input(''' \tUFC PYTHON\n
+        j1=int(input(''' \t
+-------------------------------------------------        
+-------------------------------------------------        
+-----+++---+++---++++++++++++------+++++---------
+-----+++---+++---++++++++++++---+++++++++++------
+-----+++---+++---++++----------++++-----++++-----
+-----+++---+++---+++++++-----++++----------------
+-----+++---+++---+++++++-----++++----------------
+-----+++---+++---++++----------++++-----++++-----
+-----+++++++++---++++-----------+++++++++++------
+-----+++++++++---++++--------------+++++---------
+-------------------------------------------------
+-------------------------------------------------        
+        \n
         Escolha seu lutador: 
         1 - Anderson Silva
         2 - José Aldo
@@ -28,27 +41,45 @@ class Lutador:
         print(f' O computador escolheu o {self.nome}.')
         inicio = input('Tecle ENTER para iniciar a luta.')
 
-    def Luta(self):
+    def Golpe1(self):
         r = ['ACERTOU','ERROU']
         resultado = random.choice(r)
-        golpe = int(input('''
+        g1 = int(input('''
         Sua vez de jogar, escolha seu golpe:
         1 - soco
         2 - chute
         Digite Aqui>>> '''))
-        if golpe == 1:
+        if g1 == 1:
             print(f'{self.nome} aplicou um SOCO e {resultado}')
         else:
             print(f'{self.nome} aplicou um CHUTE e {resultado}')
 
-    def Luta2(self):
+    def Golpe2(self):
         print('Computador vai jogar...'),time.sleep(4)
         g2 = ['SOCO','CHUTE']
-        golpe2 = random.choice(g2)
+        g3 = random.choice(g2)
         r2 = ['ACERTOU','ERROU']
         resultado2 = random.choice(r2)
-        print(f'{self.nome} aplicou um {golpe2} e {resultado2}')
+        print(f'{self.nome} aplicou um {g3} e {resultado2}')
+"""
+class LutadorComputador:
+    def __init__(self,*n):
+        self.nome = n
+        
+    def setNome2(self):
+        l = ['Jon Jones','George St-Pierre','Chuck Liddell']
+        self.nome = random.choice(l)
+        print(f' O computador escolheu o {self.nome}.')
+        inicio = input('Tecle ENTER para iniciar a luta.')
 
+    def Golpe2(self):
+        print('Computador vai jogar...'),time.sleep(4)
+        g2 = ['SOCO','CHUTE']
+        g3 = random.choice(g2)
+        r2 = ['ACERTOU','ERROU']
+        resultado2 = random.choice(r2)
+        print(f'{self.nome} aplicou um {g3} e {resultado2}')
+"""
             
 
 
