@@ -25,7 +25,18 @@ class Lutador:
         self.nome = random.choice(l)
         print(f' O computador escolheu o {self.nome}.')
 
-    
+    def luta(self):
+        inicio = input('Tecle ENTER para iniciar a luta.')
+        while True:
+            g = ['soco','chute']
+            print('''
+            Sua vez de jogar, escolha seu golpe:
+            1 - soco
+            2 - chute''')
+            random.choice(g)
+
+
+
 
     
     
