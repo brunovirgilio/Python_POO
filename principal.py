@@ -1,18 +1,6 @@
-from modulo import Lutador
+from modulo import Luta
 
-j1 = Lutador()
-j1.setNome()
-j2 = Lutador()
-j2.setNome2()
-
-for r in range(0,5):
-    j1.Golpe1()
-    j2.Golpe2()
-
-j1.Final()
-
-
-"""
-j3 = LutadorComputador()
-j3.setNome2()
-"""
+l1 = Luta()
+l1.definirOponente()
+l1.IniciarLuta()
+l1.Resultado()
