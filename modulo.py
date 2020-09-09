@@ -1,6 +1,7 @@
 import random 
 import time
 
+
 class Luta:
     def __init__(self,n1=0,n2=0 ,p1=0 ,p2=0):
         self.nome1 = n1
@@ -31,14 +32,16 @@ class Luta:
             3 - JUNIOR CIGANO
             Digite Aqui>>> '''))
             if j1 == 1:
-                self.nome1 = 'ANDERSON SILVA'    
+                self.nome1 = 'ANDERSON SILVA'
+                break    
             elif j1 == 2:
-                self.nome1 = 'JOSÉ ALDO'            
+                self.nome1 = 'JOSÉ ALDO'
+                break            
             elif j1 == 3:
                 self.nome1 = 'JUNIOR CIGANO'
+                break
             else:
                 print('\tESCOLHA INVÁLIDA. DIGITE 1, 2 OU 3')    
-
         print(f'\nSeu lutador é {self.nome1}.')
 
         l = ['JON JONES','GEORGE ST-PIERRE','CHUCK LIDDELL']
