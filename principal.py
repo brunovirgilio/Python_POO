@@ -1,6 +1,5 @@
 from modulo import Luta
 
-
 r = 'S'
 while not r == 'N':
     l1 = Luta()
