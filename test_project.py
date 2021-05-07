@@ -1,7 +1,9 @@
 import unittest
 from modulo import Luta
 
-class TestClass(unittest.TestCase)
+class TestClass(unittest.TestCase):
+    def test_definirOponente(self):
+        self.assertEqual(1,1)
 
-    def test_definirOponente():
-        assert j1 == "1"
+if __name__ == "__main__":
+    unittest.main()
